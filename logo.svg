@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 744.09448819 1052.3622047"
+   width="222.97701mm"
+   height="95.26297mm"
+   viewBox="0 0 790.076 337.54594"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="219.71831"
-     inkscape:cy="442.92677"
+     inkscape:cx="390.58707"
+     inkscape:cy="36.277988"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="false"
@@ -38,7 +38,11 @@
      inkscape:window-maximized="1"
      inkscape:snap-object-midpoints="true"
      inkscape:snap-global="true"
-     inkscape:snap-center="true" />
+     inkscape:snap-center="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -47,6 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,7 +59,8 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="bg2"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(170.86876,-308.16745)">
     <path
        style="display:inline;fill:#dc371e;fill-opacity:1;stroke:#562114;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 167.01284,588.27176 c -41.39219,-4.6078 -75.509778,-8.64718 -75.816849,-8.97642 -0.550671,-0.59042 -70.437876,-232.98631 -71.178746,-236.69066 -0.363157,-1.81579 -0.212179,-1.9319 3.078978,-2.36783 1.903473,-0.25213 46.304526,-7.09027 98.669007,-15.19588 52.36448,-8.10562 95.37408,-14.57154 95.57688,-14.36874 0.30366,0.30366 25.27612,285.77753 25.01232,285.92948 -0.0457,0.0263 -33.9494,-3.72216 -75.34159,-8.32995 z"
@@ -75,7 +81,8 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="bg1"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(170.86876,-308.16745)">
     <path
        style="fill:#576722;fill-opacity:1;stroke:#1f0e04;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M -9.4861476,551.48156 C -96.445536,519.60282 -167.9399,493.16872 -168.36251,492.73909 c -1.0731,-1.0909 136.394859,-159.21887 138.416329,-159.21887 1.690705,0 267.603731,219.32303 267.764331,220.84999 0.0719,0.68378 -85.9564,53.99914 -88.48203,54.83603 -0.39285,0.13014 -71.862868,-25.84593 -158.8222676,-57.72468 z"
@@ -95,11 +102,12 @@
   <g
      inkscape:groupmode="layer"
      id="layer10"
-     inkscape:label="moji waku 1">
+     inkscape:label="moji waku 1"
+     transform="translate(170.86876,-308.16745)">
     <flowRoot
        xml:space="preserve"
        id="flowRoot4533-5"
-       style="display:inline;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#2a4743;fill-opacity:1;stroke:#1f0e04;stroke-width:18.95137367;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;display:inline;fill:#2a4743;fill-opacity:1;stroke:#1f0e04;stroke-width:18.95137405;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0.69296389,-0.10587985,0,0.90404599,-28.733228,3.0823681)"><flowRegion
          id="flowRegion4535-6"><rect
            id="rect4537-4"
@@ -107,14 +115,14 @@
            height="102.85712"
            x="-134.28572"
            y="598.07648"
-           style="text-align:end;text-anchor:end;fill:#2a4743;fill-opacity:1;stroke:#1f0e04;stroke-width:18.95137367;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+           style="text-align:end;text-anchor:end;fill:#2a4743;fill-opacity:1;stroke:#1f0e04;stroke-width:18.95137405;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
          id="flowPara4539-4"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:-2.64577842px;fill:#2a4743;fill-opacity:1;stroke:#1f0e04;stroke-width:18.95137367;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">プログラミング</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:-2.64577842px;fill:#2a4743;fill-opacity:1;stroke:#1f0e04;stroke-width:18.95137405;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">プログラミング</flowPara><flowPara
          id="flowPara4541-2"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:-2.64577842px;fill:#2a4743;fill-opacity:1;stroke:#1f0e04;stroke-width:18.95137367;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">サークル</flowPara></flowRoot>    <flowRoot
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:-2.64577842px;fill:#2a4743;fill-opacity:1;stroke:#1f0e04;stroke-width:18.95137405;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">サークル</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4543-0"
-       style="display:inline;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#562114;fill-opacity:1;stroke:#1f0e04;stroke-width:4.86052708;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#562114;fill-opacity:1;stroke:#1f0e04;stroke-width:4.86052704;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(3.708306,-0.67599951,0,3.6983049,-73.245486,-1235.3542)"><flowRegion
          id="flowRegion4545-5"><rect
            id="rect4547-7"
@@ -122,11 +130,11 @@
            height="201.42857"
            x="5.7142859"
            y="442.36221"
-           style="fill:#562114;fill-opacity:1;stroke:#1f0e04;stroke-width:4.86052708;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+           style="fill:#562114;fill-opacity:1;stroke:#1f0e04;stroke-width:4.86052704;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
          id="flowPara4549-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NasuM;-inkscape-font-specification:NasuM;fill:#562114;fill-opacity:1;stroke:#1f0e04;stroke-width:4.86052708;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">TUSCOM</flowPara></flowRoot>    <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NasuM;-inkscape-font-specification:NasuM;fill:#562114;fill-opacity:1;stroke:#1f0e04;stroke-width:4.86052704;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">TUSCOM</flowPara></flowRoot>    <text
        xml:space="preserve"
-       style="display:inline;font-style:normal;font-weight:normal;font-size:115.79232788px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#f00000;fill-opacity:0;stroke:#1f0e04;stroke-width:19.99999995;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:115.79232788px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f00000;fill-opacity:0;stroke:#1f0e04;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        x="120.04536"
        y="565.05115"
        id="text4551-0"
@@ -136,13 +144,14 @@
          id="tspan4553-8"
          x="120.04536"
          y="565.05115"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#f00000;fill-opacity:0;stroke:#1f0e04;stroke-width:19.99999995;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">理大祭2016</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI Bold';fill:#f00000;fill-opacity:0;stroke:#1f0e04;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">理大祭2016</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="moji waku"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(170.86876,-308.16745)">
     <flowRoot
        xml:space="preserve"
        id="flowRoot3382-2"
@@ -271,7 +280,8 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="moji"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(170.86876,-308.16745)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:115.79232788px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ec9727;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
