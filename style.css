@@ -1,0 +1,23 @@
+.slider {
+  width: 800px;
+  height: 200px;
+  margin: auto;
+  padding: 20px;
+  background: rgb(255, 200, 200);
+}
+.slider-item {
+  text-align: center;
+  height: 100px;
+  background: rgb(244, 244, 244);
+  color: rgb(52, 152, 219);
+}
+html, body {
+  background: rgb(100, 100, 100);
+}
+.slick-slide {
+  margin: 0px 20px;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
