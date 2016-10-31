@@ -1,0 +1,11 @@
+.your-class {
+  width: 800px;
+  height: 400px;
+  background: rgb(255, 200, 200);
+}
+
+.your-class > div {
+  width: 200px;
+  height: 200px;
+  background: rgb(200,150,150);
+}
