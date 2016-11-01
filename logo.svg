@@ -26,11 +26,11 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="560.41923"
-     inkscape:cy="276.92206"
-     inkscape:current-layer="layer3"
+     inkscape:cx="368.95159"
+     inkscape:cy="268.36978"
+     inkscape:current-layer="layer6"
      inkscape:document-units="px"
-     showgrid="true"
+     showgrid="false"
      showguides="false"
      inkscape:window-width="1474"
      inkscape:window-height="841"
@@ -38,7 +38,7 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:snap-object-midpoints="false"
-     inkscape:snap-center="true"
+     inkscape:snap-center="false"
      inkscape:snap-grids="false"
      inkscape:snap-to-guides="false">
     <inkscape:grid
@@ -73,7 +73,7 @@
      id="layer1"
      inkscape:label="background2"
      inkscape:groupmode="layer"
-     style="display:inline">
+     style="display:none">
     <rect
        style="fill:#cfbbb7;fill-opacity:1;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4141-8"
@@ -86,15 +86,73 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="background"
-     style="display:inline">
+     style="display:none">
     <rect
        style="fill:#d5d5d5;fill-opacity:1;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4141"
        width="1559.6968"
        height="1141.3079"
-       x="-145.664"
-       y="-22.253969" />
+       x="-225.664"
+       y="-110.25397" />
   </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="2016">
+    <circle
+       style="fill:#f2b042;fill-opacity:1;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4231"
+       cx="626"
+       cy="388"
+       r="120" />
+    <g
+       transform="matrix(1.6124514,0,0,2.9809667,-696.38436,-392.57903)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot4233">
+      <path
+         d="m 766.82066,275.71991 23.53934,-1.06743 0,-4 -8.32,0 c -1.6,0 -3.52,0.12 -5.2,0.24 6.84,-6.2 12.04,-11.36 12.04,-16.44 0,-5.2 -7.1586,-8.7186 -12.9186,-8.7186 -6.75117,0 -9.9897,3.14184 -12.6697,5.90184 l 2.64,2.6 c 1.72,-1.76 4.93055,-4.6135 9.4297,-4.74184 5.24493,-0.14962 8.9986,2.1586 8.9986,5.1986 0,4.44 -8.53934,10.42743 -17.53934,18.26743 z"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'Source Han Code JP';-inkscape-font-specification:'Source Han Code JP Medium';fill:#ffffff;fill-opacity:1"
+         id="path4246"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccscssccsscc" />
+      <path
+         d="m 807.4901,274.1661 c 6.58287,0 14.14584,-2.5021 14.14584,-11.00592 0,-8.57558 -7.56297,-15.29493 -14.14584,-15.29493 -6.58286,0 -13.33204,4.48514 -13.33204,13.06072 0,8.50382 6.74918,13.24013 13.33204,13.24013 z m 0,-22.96391 c 3.64335,0 9.71586,4.92529 9.71586,11.95799 0,6.99681 -6.07251,7.66897 -9.71586,7.66897 -3.64334,0 -8.90206,-2.90637 -8.90206,-9.90318 0,-7.0327 5.25872,-9.72378 8.90206,-9.72378 z m 0,12.30722 c 1.69747,0 3.10513,-1.04055 3.10513,-2.76285 0,-1.72229 -1.40766,-2.79872 -3.10513,-2.79872 -1.69746,0 -3.10512,1.07643 -3.10512,2.79872 0,1.7223 1.40766,2.76285 3.10512,2.76285 z"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'Source Han Code JP';-inkscape-font-specification:'Source Han Code JP Medium';fill:#ffffff;fill-opacity:1"
+         id="path4248"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssssssssssss" />
+      <path
+         d="m 834.80485,270.77248 2.19265,-24.4 -3.48,0 c -1.92,1.04 -4.08,1.8 -7.2,2.28 l 0,2.96 4.48709,0.58706 -0.71974,18.57294 -5.56735,0 0,3.88 19.52,0 0,-3.88 z"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'Source Han Code JP';-inkscape-font-specification:'Source Han Code JP Medium';fill:#ffffff;fill-opacity:1"
+         id="path4250"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccccccc" />
+      <path
+         d="m 861.27625,271.53248 c -5.45309,0 -8.47117,-2.32 -9.07117,-7.44 2.16,-2.48 7.11117,-3.44 9.11117,-3.44 3.4,0 5.32,1.8 5.32,5.32 0,3.52 -0.77204,5.56 -5.36,5.56 z m 9.28,-22.52 c -1.88,-1.76 -4.64,-3.16 -8.28,-3.16 -6.2,0 -14.63117,4.52 -14.63117,15.56 0,9.4 3.95013,13.76 13.71117,13.76 6.2453,0 9.72,-3.6 9.72,-9.2 0,-5.88 -3.68,-8.76 -8.8,-8.76 -2.6,0 -8.03117,1.28 -10.23117,3.44 0.24,-8.12 6.43117,-10.96 10.55117,-10.96 2.04,0 4.04,0.92 5.4,2.16 z"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'Source Han Code JP';-inkscape-font-specification:'Source Han Code JP Medium';fill:#ffffff;fill-opacity:1"
+         id="path4252"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="scssscssssscscc" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="ridaisai">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4222"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#f2b042;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       transform="matrix(1.4106629,0,0,1.4106629,-8.2967681,-102.7452)"><flowRegion
+         id="flowRegion4224"><rect
+           id="rect4226"
+           width="527"
+           height="148"
+           x="80"
+           y="300"
+           style="fill:#f2b042;fill-opacity:1;" /></flowRegion><flowPara
+         id="flowPara4228"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:Nasu;-inkscape-font-specification:Nasu;fill:#f2b042;fill-opacity:1;">理大祭</flowPara></flowRoot>  </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
