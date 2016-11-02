@@ -1,8 +1,33 @@
-.test {
-    .hoge {
-        color: red;
-        &:hover {
-            color: blue;
-        }
-    }
-}
+html, body
+  width: 100%
+  height: 100%
+  margin: 0
+
+body
+  background-image: url("./img/background.svg")
+  background-size: cover
+
+footer
+  width: 100%
+  height: 8vh
+  color: rgba(255, 255, 255, 150)
+  background: #090404
+  position: fixed
+  bottom: 0
+
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  & > a
+    font-size: 4vh
+    color: rgba(255, 255, 255, 150)
+    text-decoration: none
+    display: block
+    margin-left: 2%
+
+  address
+    margin-right: 2%
+
+    & > a
+      color: alpha(#6197a6, 200)
