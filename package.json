@@ -4,13 +4,15 @@
   "description": "TUSCOMの2016年理大祭用ページ作成リポジトリ",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "stylus": "stylus src/stylus/style.styl -o dist"
+    "stylus": "stylus src/stylus/style.styl -o dist",
+    "image": "imagemin src/img/* --out-dir=dist/img"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/6314089/tuscom_web_ridaisai_2016"
   },
   "devDependencies": {
+    "imagemin-cli": "^3.0.0",
     "stylus": "^0.54.5"
   }
 }
