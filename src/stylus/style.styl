@@ -7,6 +7,21 @@ body
   background-image: url("./img/background.svg")
   background-size: cover
 
+
+//#########################################################
+// main
+
+#main
+  width: 100%
+  max-width: 1600px
+  height: 100%
+  margin: 0 auto
+  position: relative
+
+
+//#########################################################
+// footer
+
 footer
   width: 100%
   height: 8vh
@@ -32,16 +47,11 @@ footer
     & > a
       color: alpha(#6197a6, 0.8)
 
+
 //#########################################################
+// index.html
 
-#main
-  width: 100%
-  max-width: 1600px
-  height: 100%
-  margin: 0 auto
-  position: relative
-
-  p
+#main p
     position: absolute
 
 #logo
@@ -57,21 +67,30 @@ footer
   width: 80%
   max-width: 1000px
   text-align: right
-  background: rgba(0, 0, 0, 0.3)
-  border-radius: 15px
+  // background: rgba(0, 0, 0, 0.3)
+  // border-radius: 15px
 
-  #vine
-    width: 100%
-    max-width: 600px
+#vine
+  width: 100%
+  max-width: 600px
 
-  #slider-container
-    display: flex
-    align-items: center
+#slider-container
+  display: flex
+  align-items: center
+  text-align: center
 
-    .slider-arrow
-      height: 50px
-      margin: 0 15px
+#slider-left-arrow
+#slider-right-arrow
+  width: 40px
+  margin: 0 10px
 
-    #slider
-      flex-grow: 1
-      height: 20vh
+#slider
+  flex-grow: 1
+  height: 20vh
+  width: calc(100% - 100px)
+
+  a
+    display: block
+    height: 20vh
+    margin: 0 20px
+    background: rgba(0, 0, 0, 0.3)
