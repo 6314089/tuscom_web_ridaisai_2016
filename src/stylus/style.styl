@@ -49,6 +49,93 @@ footer
 
 
 //#########################################################
+// cover
+
+#cover1
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 1
+  background-color: #411c2e
+  transform: translateY(-100%)
+  &::before
+  &::after
+    content: " "
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: -1
+    transform: translateY(-100%)
+  &::before
+    background-color: #cb5d6a
+  &::after
+    background-color: #402925
+
+#cover2
+  position: absolute
+  width: 100%
+  height: 100%
+  background-color: #f0831e
+  transform: translateY(-100%)
+  &::before
+  &::after
+    content: " "
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: -1
+    transform: translateY(-100%)
+  &::before
+    background-color: #6197a6
+  &::after
+    background-color: #85a029
+
+
+#cover1.down-in
+  animation-name: down-in
+  animation-duration: 0.5s
+  animation-timing-function: ease
+  animation-fill-mode: both
+  &::before
+    animation-name: down-in
+    animation-duration: 0.5s
+    animation-timing-function: ease
+    animation-delay: 0.15s
+    animation-fill-mode: both
+  &::after
+    animation-name: down-in
+    animation-duration: 0.5s
+    animation-timing-function: ease
+    animation-delay: 0.25s
+    animation-fill-mode: both
+
+.down-in #cover2
+  animation-name: down-in
+  animation-duration: 0.5s
+  animation-timing-function: ease
+  animation-delay: 0.35s
+  animation-fill-mode: both
+  &::before
+    animation-name: down-in
+    animation-duration: 0.5s
+    animation-timing-function: ease
+    animation-delay: 0.45s
+    animation-fill-mode: both
+  &::after
+    animation-name: down-in
+    animation-duration: 0.5s
+    animation-timing-function: ease-in-out
+    animation-delay: 0.55s
+    animation-fill-mode: both
+
+@keyframes down-in
+  0%
+    transform: translateY(-100%)
+  100%
+    transform: translateY(0)
+
+
+//#########################################################
 // index.html
 
 #main p
