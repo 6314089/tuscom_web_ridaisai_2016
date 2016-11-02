@@ -1,0 +1,23 @@
+{
+  "name": "tuscom_web_ridaisai_2016",
+  "version": "0.1.0",
+  "description": "TUSCOMの2016年理大祭用ページ作成リポジトリ",
+  "scripts": {
+    "build": "npm-run-all -s clean copy -p build:*",
+    "build:stylus": "stylus -c src/stylus/style.styl -o dist",
+    "build:image": "imagemin src/img/* --out-dir=dist/img",
+    "copy": "cpx ./src/**/*.html ./dist",
+    "clean": "rimraf ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/6314089/tuscom_web_ridaisai_2016"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "imagemin-cli": "^3.0.0",
+    "npm-run-all": "^3.1.1",
+    "rimraf": "^2.5.4",
+    "stylus": "^0.54.5"
+  }
+}
