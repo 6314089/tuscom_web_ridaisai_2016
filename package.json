@@ -1,0 +1,16 @@
+{
+  "name": "tuscom_web_ridaisai_2016",
+  "version": "0.1.0",
+  "description": "TUSCOMの2016年理大祭用ページ作成リポジトリ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stylus": "stylus src/stylus/style.styl -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/6314089/tuscom_web_ridaisai_2016"
+  },
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  }
+}
