@@ -4,9 +4,9 @@
   "description": "TUSCOMの2016年理大祭用ページ作成リポジトリ",
   "scripts": {
     "build": "npm-run-all -s clean copy -p build:*",
-    "build:stylus": "stylus src/stylus/style.styl -o dist",
+    "build:stylus": "stylus -c src/stylus/style.styl -o dist",
     "build:image": "imagemin src/img/* --out-dir=dist/img",
-    "copy": "cpx ./**/*.html ./dist",
+    "copy": "cpx ./src/**/*.html ./dist",
     "clean": "rimraf ./dist"
   },
   "repository": {
