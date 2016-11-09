@@ -145,8 +145,44 @@ cover2-anim(classname,anim-name)
   cover #411c2e #cb5d6a #402925
   cover1-anim down-in anim-cover-down-in
 #cover2
+  overflow hidden
   cover #f0831e #6197a6 #85a029
   cover2-anim down-in anim-cover-down-in
+
+@keyframes now-loading
+  0%
+    opacity 0
+    transform translateY(10vh)
+  100%
+    opacity 1
+    transform translateY(0)
+@keyframes loader
+  0%
+    transform rotateZ(0)
+  100%
+    transform rotateZ(360deg)
+#now-loading
+  position absolute
+  top 0
+  bottom 0
+  right 0
+  left 0
+  width 40vh
+  max-width 80vw
+  height auto
+  display block
+  margin auto
+  animation 0.8s ease-out 0s infinite alternate now-loading
+#loader
+  position absolute
+  top 10vh
+  left 30%
+  width auto
+  height 120vw
+  min-height 160vh
+  display block
+  opacity 0.4
+  animation 2.4s ease 0s infinite normal loader
 
 
 //#########################################################
