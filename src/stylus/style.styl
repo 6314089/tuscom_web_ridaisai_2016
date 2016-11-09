@@ -94,12 +94,6 @@ footer
 //#########################################################
 // cover
 
-anim-cover-down-in(delay, timing-func = ease)
-  animation-name down-in
-  animation-duration 0.5s
-  animation-timing-function timing-func
-  animation-delay (delay)s
-  animation-fill-mode both
 @keyframes down-in
   0%
     transform translateY(-100%)
@@ -124,28 +118,28 @@ cover(color1, color2, color3)
     background-color color2
   &::after
     background-color color3
-cover1-anim(classname, anim-name)
+cover1-anim-in(classname, anim-name)
   &.{classname}
-    anim-name 0
+    animation 0.5s ease 0s 1 both anim-name
     &::before
-      anim-name 0.15
+      animation 0.5s ease 0.15s 1 both anim-name
     &::after
-      anim-name 0.25
-cover2-anim(classname,anim-name)
+      animation 0.5s ease 0.25s 1 both anim-name
+cover2-anim-in(classname,anim-name)
   .{classname} &
-    anim-name 0.35
+    animation 0.5s ease 0.35s 1 both anim-name
     &::before
-      anim-name 0.45
+      animation 0.5s ease 0.45s 1 both anim-name
     &::after
-      anim-name 0.55 ease-in-out
+      animation 0.5s ease-in-out 0.55s 1 both anim-name
 
 #cover1
   cover #411c2e #cb5d6a #402925
-  cover1-anim down-in anim-cover-down-in
+  cover1-anim-in down-in down-in
 #cover2
   overflow hidden
   cover #f0831e #6197a6 #85a029
-  cover2-anim down-in anim-cover-down-in
+  cover2-anim-in down-in down-in
 
 @keyframes now-loading
   0%
