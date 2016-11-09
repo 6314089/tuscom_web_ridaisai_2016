@@ -5,6 +5,7 @@ html, body
 body
   background-image url("./img/background.svg")
   background-size cover
+  overflow-x hidden
 
 
 //#########################################################
@@ -94,17 +95,6 @@ footer
 //#########################################################
 // cover
 
-@keyframes down-in
-  0%
-    transform translateY(-100%)
-  100%
-    transform translateY(0)
-@keyframes up-out
-  0%
-    transform translateY(0)
-  100%
-    transform translateY(-100%)
-
 cover-base()
   position absolute
   width 100%
@@ -123,20 +113,51 @@ cover(color1, color2, color3)
     background-color color2
   &::after
     background-color color3
+
+@keyframes down-in
+  0%
+    transform translateY(-100%)
+  100%
+    transform translateY(0)
+@keyframes up-out
+  0%
+    transform translateY(0)
+  100%
+    transform translateY(-100%)
+@keyframes left-in
+  0%
+    transform translateX(100%)
+  100%
+    transform translateX(0)
+@keyframes left-out
+  0%
+    transform translateX(0)
+  100%
+    transform translateX(-100%)
+@keyframes right-in
+  0%
+    transform translateX(-100%)
+  100%
+    transform translateX(0)
+@keyframes right-out
+  0%
+    transform translateX(0)
+  100%
+    transform translateX(100%)
 cover1-anim-in(classname, anim-name)
   &.{classname}
-    animation 0.5s ease 0s 1 both anim-name
+    animation 0.5s ease-in-out 0s 1 both anim-name
     &::before
-      animation 0.5s ease 0.15s 1 both anim-name
+      animation 0.5s ease 0.20s 1 both anim-name
     &::after
-      animation 0.5s ease 0.25s 1 both anim-name
+      animation 0.5s ease 0.30s 1 both anim-name
 cover2-anim-in(classname,anim-name)
   .{classname} &
-    animation 0.5s ease 0.35s 1 both anim-name
+    animation 0.5s ease 0.40s 1 both anim-name
     &::before
-      animation 0.5s ease 0.45s 1 both anim-name
+      animation 0.5s ease 0.50s 1 both anim-name
     &::after
-      animation 0.5s ease-in-out 0.55s 1 both anim-name
+      animation 0.5s ease 0.65s 1 both anim-name
 cover1-anim-out(classname, anim-name)
   &.{classname}
     animation 0.5s ease 0.55s 1 both anim-name
@@ -156,11 +177,19 @@ cover2-anim-out(classname,anim-name)
   cover #411c2e #cb5d6a #402925
   cover1-anim-in down-in down-in
   cover1-anim-out up-out up-out
+  cover1-anim-in left-in left-in
+  cover1-anim-out left-out left-out
+  cover1-anim-in right-in right-in
+  cover1-anim-out right-out right-out
 #cover2
   overflow hidden
   cover #f0831e #6197a6 #85a029
   cover2-anim-in down-in down-in
   cover2-anim-out up-out up-out
+  cover2-anim-in left-in left-in
+  cover2-anim-out left-out left-out
+  cover2-anim-in right-in right-in
+  cover2-anim-out right-out right-out
 
 @keyframes now-loading
   0%
