@@ -12,7 +12,7 @@
     <script type="text/javascript" src="./slick/slick.min.js"></script>
   </head>
   <body>
-    <div id="cover1" class="left-in code-left">
+    <div id="cover1" class="">
       <div id="cover2">
         <img src="./img/code-0.svg" alt="" class="cover-code" />
         <img src="./img/code-1.svg" alt="" class="cover-code" />
@@ -85,7 +85,9 @@
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 2000,
-          arrows: false,
+          arrows: true,
+          prevArrow: "#slider-left-arrow",
+          nextArrow: "#slider-right-arrow",
         });
       });
     </script>
