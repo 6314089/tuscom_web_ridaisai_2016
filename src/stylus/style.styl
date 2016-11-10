@@ -151,7 +151,7 @@ cover1-anim-in(classname, anim-name)
       animation 0.5s ease 0.20s 1 both anim-name
     &::after
       animation 0.5s ease 0.30s 1 both anim-name
-cover2-anim-in(classname,anim-name)
+cover2-anim-in(classname, anim-name)
   .{classname} &
     animation 0.5s ease 0.40s 1 both anim-name
     &::before
@@ -165,7 +165,7 @@ cover1-anim-out(classname, anim-name)
       animation 0.5s ease 0.45s 1 both anim-name
     &::after
       animation 0.5s ease 0.35s 1 both anim-name
-cover2-anim-out(classname,anim-name)
+cover2-anim-out(classname, anim-name)
   .{classname} &
     animation 0.5s ease 0.25s 1 both anim-name
     &::before
@@ -225,6 +225,46 @@ cover2-anim-out(classname,anim-name)
   display block
   opacity 0.4
   animation 2.4s ease 0s infinite normal loader
+
+code-keyframe-base(n, scale, rotate, rdelta, Y, ydelta)
+  {unit(n, '%')}
+    opacity 0
+    transform translateY((Y + ydelta / 2)vh)translateX(110vw)rotateZ((rotate + rdelta / 2)deg)scale(scale)
+  {unit(n + 3, '%')}
+    opacity .3
+  {unit(n + 5, '%')}
+    opacity .3
+  {unit(n + 8, '%')}
+    opacity 0
+    transform translateY((Y - ydelta / 2)vh)translateX(-10vw)rotateZ((rotate - rdelta / 2)deg)scale(scale)
+scale = .9 1.3 .85 1.5 1 .95 1.2 1.5 1.3 1.05
+rotate = 5 0 -4 3 10 -1 -8 -5 2 9
+rotateDelta = -3 3 2.5 1 -4 -2.5 3.5 -1.5 5 -8
+y = 50 90 15 35 85 70 40 20 65 5
+yDelta = 5 -5 3 4 -2 -7 6 1 8 -3
+for k in 0...5
+  @keyframes code-{k}
+    for i in 0...10
+      code-keyframe-base(i * 10, scale[operate('%', i + k, 10)], rotate[operate('%', i + k + 1, 10)], rotateDelta[operate('%', i - k, 10)], y[operate('%', i - k + 1, 10)], yDelta[operate('%', i + k + 2, 10)])
+easeSine = cubic-bezier(0.445, 0.05, 0.55, 0.95)
+anim-code-left()
+  for i in 1..12
+    .code-left &:nth-child({i})
+      animation 30s easeSine (0.25s * i) infinite normal unquote('code-' + (i % 5))
+anim-code-right()
+  for i in 1..12
+    .code-right &:nth-child({i})
+      animation 30s easeSine (0.25s * i) infinite reverse unquote('code-' + (i % 5))
+.cover-code
+  position absolute
+  top 0
+  left -60vh
+  width 120vh
+  height auto
+  opacity 0
+  transform-origin center
+  anim-code-left()
+  anim-code-right()
 
 
 //#########################################################
