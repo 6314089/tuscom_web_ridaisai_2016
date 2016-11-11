@@ -27,5 +27,8 @@
     "rimraf": "^2.5.4",
     "stylus": "^0.54.5",
     "webpack": "2.1.0-beta.25"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.6.0"
   }
 }
