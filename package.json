@@ -9,6 +9,7 @@
     "build:stylus": "stylus -c src/stylus/style.styl -o dist",
     "build:image": "imagemin src/img/* --out-dir=dist/img",
     "copy:slick": "cpx ./src/slick/**/* ./dist/slick",
+    "build:webpack": "webpack --progress",
     "copy:html": "cpx ./src/*.html ./dist",
     "clean": "rimraf ./dist"
   },
