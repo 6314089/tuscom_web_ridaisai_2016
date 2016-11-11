@@ -10,6 +10,7 @@
     "build:image": "imagemin src/img/* --out-dir=dist/img",
     "build:webpack": "webpack --progress",
     "copy:html": "cpx ./src/*.html ./dist",
+    "copy:slick-carousel": "cpx ./node_modules/slick-carousel/slick/*.css ./dist/slick",
     "clean": "rimraf ./dist"
   },
   "repository": {

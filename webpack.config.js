@@ -22,5 +22,9 @@ module.exports = {
       sourceMap: true,
       compress: true,
     }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),
   ],
 };
