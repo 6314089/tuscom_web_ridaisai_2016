@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "TUSCOMの2016年理大祭用ページ作成リポジトリ",
   "scripts": {
+    "start": "npm-run-all build server",
+    "server": "node ./server.js",
     "build": "npm-run-all -s clean -p copy:* -p build:*",
     "build:stylus": "stylus -c src/stylus/style.styl -o dist",
     "build:image": "imagemin src/img/* --out-dir=dist/img",
