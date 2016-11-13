@@ -1,4 +1,6 @@
-require('../../node_modules/jquery-migrate/dist/jquery-migrate.min.js')
+import slickOption from './slickOption';
+
+require('../../node_modules/jquery-migrate/dist/jquery-migrate.min');
 require('slick-carousel');
 
-import './slickConfig.js';
+$(() => $('#slider').slick(slickOption));
