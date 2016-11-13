@@ -21,6 +21,7 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
       compress: true,
+      comments: /^\**!|@preserve|@license|Version/,
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
