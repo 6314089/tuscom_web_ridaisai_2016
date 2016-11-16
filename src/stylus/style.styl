@@ -37,7 +37,7 @@ anim-bg-code(n)
   width 100%
   height 100%
   overflow hidden
-  opacity 0.5
+  opacity 0.65
 
   img
     display block
@@ -278,6 +278,9 @@ anim-code-right()
     left 10%
     top 48%
     font-size 1.5rem
+    text-shadow 0 0 1px rgba(30, 0, 0, .8),
+                0 0 2px rgba(0, 0, 0, .5),
+                0 0 8px rgba(0, 0, 0, .3)
 
 #logo
   position absolute
@@ -319,7 +322,24 @@ anim-code-right()
     height 20vh
     max-height 200px
     margin 0 20px
-    background rgba(0, 0, 0, 0.3)
+    background #090404
+    overflow hidden
+    position relative
+
+    img
+      min-width 100%
+      min-height 100%
+      position absolute
+      top 50%
+      left 50%
+      transform translate3d(-50%, -50%, 0)
+
+#main-img
+  height 75vh
+  width auto
+  position absolute
+  right 5%
+  top 5vh
 
 
 //#########################################################
