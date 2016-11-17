@@ -1,4 +1,5 @@
 extends _base
 block main
   p Hello, #{fileName}!
-  p #{text}
+  each t in text
+    p #{t}
