@@ -5,7 +5,7 @@ html, body
 body
   background-image url("./img/background.svg")
   background-size cover
-  overflow-x hidden
+  overflow hidden
 
 
 //#########################################################
@@ -73,6 +73,7 @@ footer
   background #090404
   position fixed
   bottom 0
+  z-index 1
 
   display flex
   justify-content space-between
@@ -102,7 +103,7 @@ cover-base()
   transform translateY(-100%)
 cover(color1, color2, color3)
   cover-base()
-  z-index 1
+  z-index 10
   background-color color1
   &::before
   &::after
@@ -396,7 +397,13 @@ main-arrow(direction)
   height 100%
   overflow-y scroll
   img
+    display block
     width 80%
     height auto
     margin-top 20px
     margin-bottom 20px
+    margin-left auto
+    margin-right auto
+  p
+    width 80%
+    margin auto
