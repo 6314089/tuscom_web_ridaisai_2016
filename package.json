@@ -6,11 +6,11 @@
     "start": "npm-run-all build server",
     "server": "node ./server.js",
     "build": "npm-run-all -s clean -p copy:* -p build:*",
-    "build:stylus": "stylus -c src/stylus/style.styl -o dist/ridaisai2016",
-    "build:image": "imagemin src/img/* --out-dir=dist/ridaisai2016/img",
+    "build:stylus": "stylus -c src/stylus/style.styl -o dist",
+    "build:image": "imagemin src/img/* --out-dir=dist/img",
     "build:webpack": "webpack --progress",
-    "copy:html": "cpx ./src/*.html ./dist",
-    "copy:slick-carousel": "cpx \"./node_modules/slick-carousel/slick/*.{css,gif}\" ./dist/ridaisai2016/slick",
+    "build:pug": "node ./compilePug.js",
+    "copy:slick-carousel": "cpx \"./node_modules/slick-carousel/slick/*.{css,gif}\" ./dist/slick",
     "clean": "rimraf ./dist"
   },
   "repository": {
