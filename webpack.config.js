@@ -5,7 +5,7 @@ module.exports = {
   context: path.join(__dirname, '/src'),
   entry: ['babel-polyfill', './js/main.js'],
   output: {
-    path: path.join(__dirname, '/dist/ridaisai2016'),
+    path: path.join(__dirname, '/dist'),
     filename: 'bundle.js',
   },
   module: {
@@ -16,7 +16,6 @@ module.exports = {
       },
     ],
   },
-  devtool: 'source-map',
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,

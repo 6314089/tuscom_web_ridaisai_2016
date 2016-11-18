@@ -1,3 +1,6 @@
+//#########################################################
+// base.pug
+//#########################################################
 html, body
   width 100%
   height 100%
@@ -269,7 +272,8 @@ anim-code-right()
 
 
 //#########################################################
-// index.html
+// top.pug
+//#########################################################
 
 #main > p
     position absolute
@@ -344,9 +348,10 @@ anim-code-right()
 
 
 //#########################################################
-// article.html
+// single.pug
+//#########################################################
 
-.article-logo
+.single-logo
   display block
   position absolute
   top 5vh
@@ -375,7 +380,7 @@ main-arrow(direction)
 .main-right-arrow
   main-arrow(right)
 
-.article
+.single
   position absolute
   top 7vh
   left 0
@@ -393,7 +398,7 @@ main-arrow(direction)
     width 40%
     height auto
 
-.inner-article
+.inner-single
   height 100%
   overflow-y scroll
   img
@@ -404,6 +409,10 @@ main-arrow(direction)
     margin-bottom 20px
     margin-left auto
     margin-right auto
+  h1
+    font-size 2rem
   p
     width 80%
     margin auto
+    font-size 1.2rem
+    margin-bottom 1rem
