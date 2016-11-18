@@ -1,0 +1,271 @@
+//#########################################################
+// base.pug
+//#########################################################
+html, body
+  width 100%
+  height 100%
+  margin 0
+body
+  background-image url("./img/theme/background.png")
+  background-size cover
+  overflow hidden
+
+
+//#########################################################
+// code片
+
+anim-bg-code(n)
+  animation-name bg-code
+  animation-duration 70s
+  animation-timing-function linear
+  animation-delay (70 * (n - 1) / 12)s
+  animation-fill-mode both
+  animation-direction normal
+  animation-iteration-count infinite
+@keyframes bg-code
+  0%
+    transform rotateZ(-15deg)translateX(-10vw)
+    opacity 0
+  6%
+    opacity 1
+  30%
+    opacity 1
+  40%
+    transform rotateZ(120deg)translateX(10vw)
+    opacity 0
+  100%
+    opacity 0
+#background-code
+  position absolute
+  width 100%
+  height 100%
+  overflow hidden
+  opacity 0.65
+
+  img
+    display block
+    width 70vw
+    height auto
+    position absolute
+    right 20%
+    top 55%
+    transform-origin right
+    for i in 1..12
+      &:nth-child({i})
+        anim-bg-code(i)
+
+
+//#########################################################
+// main
+
+#main
+  width 100%
+  max-width 1600px
+  height 100vh
+  margin 0 auto
+  position relative
+
+
+//#########################################################
+// footer
+
+footer
+  width 100%
+  height 8vh
+  color rgba(255, 255, 255, 0.7)
+  background #090404
+  position fixed
+  bottom 0
+  z-index 1
+
+  display flex
+  justify-content space-between
+  align-items center
+
+  & > a
+    font-size 4vh
+    color rgba(255, 255, 255, 0.7)
+    text-decoration none
+    display block
+    margin-left 2%
+
+  address
+    margin-right 2%
+
+    & > a
+      color alpha(#6197a6, 0.8)
+
+
+//#########################################################
+// cover
+
+cover-base()
+  position absolute
+  width 100%
+  height 100%
+  transform translateY(-100%)
+cover(color1, color2, color3)
+  cover-base()
+  z-index 10
+  background-color color1
+  &::before
+  &::after
+    cover-base()
+    content " "
+    z-index -1
+  &::before
+    background-color color2
+  &::after
+    background-color color3
+
+@keyframes down-in
+  0%
+    transform translateY(-100%)
+  100%
+    transform translateY(0)
+@keyframes up-out
+  0%
+    transform translateY(0)
+  100%
+    transform translateY(-100%)
+@keyframes left-in
+  0%
+    transform translateX(100%)
+  100%
+    transform translateX(0)
+@keyframes left-out
+  0%
+    transform translateX(0)
+  100%
+    transform translateX(-100%)
+@keyframes right-in
+  0%
+    transform translateX(-100%)
+  100%
+    transform translateX(0)
+@keyframes right-out
+  0%
+    transform translateX(0)
+  100%
+    transform translateX(100%)
+cover1-anim-in(classname, anim-name)
+  &.{classname}
+    animation 0.5s ease-in-out 0s 1 both anim-name
+    &::before
+      animation 0.5s ease 0.20s 1 both anim-name
+    &::after
+      animation 0.5s ease 0.30s 1 both anim-name
+cover2-anim-in(classname, anim-name)
+  .{classname} &
+    animation 0.5s ease 0.40s 1 both anim-name
+    &::before
+      animation 0.5s ease 0.50s 1 both anim-name
+    &::after
+      animation 0.5s ease 0.65s 1 both anim-name
+cover1-anim-out(classname, anim-name)
+  &.{classname}
+    animation 0.5s ease 0.55s 1 both anim-name
+    &::before
+      animation 0.5s ease 0.45s 1 both anim-name
+    &::after
+      animation 0.5s ease 0.35s 1 both anim-name
+cover2-anim-out(classname, anim-name)
+  .{classname} &
+    animation 0.5s ease 0.25s 1 both anim-name
+    &::before
+      animation 0.5s ease 0.15s 1 both anim-name
+    &::after
+      animation 0.5s ease-in-out 0s 1 both anim-name
+
+#cover1
+  cover #411c2e #cb5d6a #402925
+  cover1-anim-in down-in down-in
+  cover1-anim-out up-out up-out
+  cover1-anim-in left-in left-in
+  cover1-anim-out left-out left-out
+  cover1-anim-in right-in right-in
+  cover1-anim-out right-out right-out
+#cover2
+  overflow hidden
+  cover #f0831e #6197a6 #85a029
+  cover2-anim-in down-in down-in
+  cover2-anim-out up-out up-out
+  cover2-anim-in left-in left-in
+  cover2-anim-out left-out left-out
+  cover2-anim-in right-in right-in
+  cover2-anim-out right-out right-out
+
+@keyframes now-loading
+  0%
+    opacity 0
+    transform translateY(10vh)
+  100%
+    opacity 1
+    transform translateY(0)
+@keyframes loader
+  0%
+    transform rotateZ(0)
+  100%
+    transform rotateZ(360deg)
+#now-loading
+  position absolute
+  top 0
+  bottom 0
+  right 0
+  left 0
+  width 40vh
+  max-width 80vw
+  height auto
+  display block
+  margin auto
+  animation 0.8s ease-out 0s infinite alternate now-loading
+#loader
+  position absolute
+  top 10vh
+  left 30%
+  width auto
+  height 120vw
+  min-height 160vh
+  display block
+  opacity 0.4
+  animation 2.4s ease 0s infinite normal loader
+
+code-keyframe-base(n, scale, rotate, rdelta, Y, ydelta)
+  {unit(n, '%')}
+    opacity 0
+    transform translateY((Y + ydelta / 2)vh)translateX(110vw)rotateZ((rotate + rdelta / 2)deg)scale(scale)
+  {unit(n + 3, '%')}
+    opacity .3
+  {unit(n + 5, '%')}
+    opacity .3
+  {unit(n + 8, '%')}
+    opacity 0
+    transform translateY((Y - ydelta / 2)vh)translateX(-10vw)rotateZ((rotate - rdelta / 2)deg)scale(scale)
+scale = .9 1.3 .85 1.5 1 .95 1.2 1.5 1.3 1.05
+rotate = 5 0 -4 3 10 -1 -8 -5 2 9
+rotateDelta = -3 3 2.5 1 -4 -2.5 3.5 -1.5 5 -8
+y = 50 90 15 35 85 70 40 20 65 5
+yDelta = 5 -5 3 4 -2 -7 6 1 8 -3
+for k in 0...5
+  @keyframes code-{k}
+    for i in 0...10
+      code-keyframe-base(i * 10, scale[operate('%', i + k, 10)], rotate[operate('%', i + k + 1, 10)], rotateDelta[operate('%', i - k, 10)], y[operate('%', i - k + 1, 10)], yDelta[operate('%', i + k + 2, 10)])
+easeSine = cubic-bezier(0.445, 0.05, 0.55, 0.95)
+anim-code-left()
+  for i in 1..12
+    .code-left &:nth-child({i})
+      animation 30s easeSine (0.25s * i) infinite normal unquote('code-' + (i % 5))
+anim-code-right()
+  for i in 1..12
+    .code-right &:nth-child({i})
+      animation 30s easeSine (0.25s * i) infinite reverse unquote('code-' + (i % 5))
+.cover-code
+  position absolute
+  top 0
+  left -60vh
+  width 120vh
+  height auto
+  opacity 0
+  transform-origin center
+  anim-code-left()
+  anim-code-right()

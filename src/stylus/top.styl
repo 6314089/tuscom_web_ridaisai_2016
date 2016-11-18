@@ -1,0 +1,74 @@
+//#########################################################
+// top.pug
+//#########################################################
+
+#main > p
+    position absolute
+    text-align center
+    display block
+    width 30%
+    left 10%
+    top 48%
+    font-size 1.5rem
+    text-shadow 0 0 1px rgba(30, 0, 0, .8),
+                0 0 2px rgba(0, 0, 0, .5),
+                0 0 8px rgba(0, 0, 0, .3)
+
+#logo
+  position absolute
+  left 6%
+  top 8%
+  width 40%
+
+#slider-area
+  position absolute
+  bottom 12vh
+  right 6%
+  width 80%
+  max-width 1000px
+  text-align right
+
+#vine
+  width 100%
+  max-width 600px
+
+#slider-container
+  display flex
+  align-items center
+  text-align center
+
+#slider-left-arrow
+#slider-right-arrow
+  width 40px
+  margin 0 10px
+  cursor pointer
+
+#slider
+  flex-grow 1
+  height 20vh
+  max-height 200px
+  width calc(100% - 100px)
+
+  a
+    display block
+    height 20vh
+    max-height 200px
+    margin 0 20px
+    background #090404
+    overflow hidden
+    position relative
+
+    img
+      min-width 100%
+      min-height 100%
+      position absolute
+      top 50%
+      left 50%
+      transform translate3d(-50%, -50%, 0)
+
+#main-img
+  height 75vh
+  width auto
+  position absolute
+  right 5%
+  top 5vh
