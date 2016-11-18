@@ -1,10 +1,10 @@
 module.exports = [
   {
     fileName: 'popcorn.html',
-    thumbnail: './img/popcorn-thumbnail.jpg',
+    thumbnail: './img/popcorn/popcorn-thumbnail.jpg',
     images: [
-      './img/popcorn-1.jpg',
-      './img/popcorn-2.jpg',
+      './img/popcorn/popcorn-1.jpg',
+      './img/popcorn/popcorn-2.jpg',
     ],
     title: 'ポップコーン販売（外ブース）',
     text: [
@@ -13,12 +13,12 @@ module.exports = [
   },
   {
     fileName: 'SLG.html',
-    thumbnail: './img/SLG-thumbnail.png',
+    thumbnail: './img/SLG/SLG-thumbnail.png',
     images: [
-      './img/SLG-1.png',
-      './img/SLG-2.png',
-      './img/SLG-3.png',
-      './img/SLG-4.png',
+      './img/SLG/SLG-1.png',
+      './img/SLG/SLG-2.png',
+      './img/SLG/SLG-3.png',
+      './img/SLG/SLG-4.png',
     ],
     title: 'SLG',
     text: [
@@ -29,10 +29,10 @@ module.exports = [
   },
   {
     fileName: 'dummy1.html',
-    thumbnail: './img/dummy1-thumbnail.png',
+    thumbnail: './img/dummy1/dummy1-thumbnail.png',
     images: [
-      './img/dummy1-1.png',
-      './img/dummy1-2.png',
+      './img/dummy1/dummy1-1.png',
+      './img/dummy1/dummy1-2.png',
     ],
     title: 'dummy1',
     text: [
@@ -43,10 +43,10 @@ module.exports = [
   },
   {
     fileName: 'dummy2.html',
-    thumbnail: './img/dummy2-thumbnail.png',
+    thumbnail: './img/dummy2/dummy2-thumbnail.png',
     images: [
-      './img/dummy2-1.png',
-      './img/dummy2-2.png',
+      './img/dummy2/dummy2-1.png',
+      './img/dummy2/dummy2-2.png',
     ],
     title: 'dummy2',
     text: [
@@ -57,10 +57,10 @@ module.exports = [
   },
   {
     fileName: 'dummy3.html',
-    thumbnail: './img/dummy3-thumbnail.png',
+    thumbnail: './img/dummy3/dummy3-thumbnail.png',
     images: [
-      './img/dummy3-1.png',
-      './img/dummy3-2.png',
+      './img/dummy3/dummy3-1.png',
+      './img/dummy3/dummy3-2.png',
     ],
     title: 'dummy3',
     text: [
