@@ -5,9 +5,9 @@ const mkdirp = require('mkdirp-promise');
 const imagemin = require('imagemin');
 const svg2png = require('svg2png');
 
+const src = path.join(__dirname, './src/img/');
 const dist = path.join(__dirname, './dist/img/');
-const pattern = ext => `./src/img/*.${ext}`;
-
+const pattern = ext => `${src}**/*.${ext}`;
 
 const other = () =>
   imagemin([pattern('png'), pattern('jpg')], dist)
@@ -18,13 +18,14 @@ const other = () =>
 const svg = () =>
   glob(pattern('svg'))
   .then(files => files.map(
-    file => [file, file.split('/').pop().replace(/.svg$/, '.png')]
+    file => [file, path.relative(src, file).replace(/.svg$/, '.png')]
   ))
   .then(files => files.map(
     ([file, temp]) => [file, path.join(dist, temp)]
   ))
   .then(files => files.map(
-    ([file, out]) => fs.readFile(file)
+    ([file, out]) => mkdirp(path.dirname(out))
+      .then(() => fs.readFile(file))
       .then(svg2png)
       .then(imagemin.buffer)
       .then(buffer => fs.writeFile(out, buffer))
@@ -34,7 +35,7 @@ const svg = () =>
   .then(pendings => Promise.all(pendings))
 
 
-mkdirp(dist)
+Promise.resolve(console.log('build images'))
 .then(() => Promise.all([other(), svg()]))
 .then(() => console.log('\ncomplete!'))
 .catch(err => console.error(err));
