@@ -1,18 +1,18 @@
 extends base
 block main
   #main.barba-container
-    img#logo(src='./img/logo.png', alt='TUSCOM 理大祭2016')/
-    img#main-img(src='./img/img.png', alt='')/
+    img#logo(src='./img/theme/logo.png', alt='TUSCOM 理大祭2016')/
+    img#main-img(src='./img/theme/img.png', alt='')/
     p
       |プログラミング展示会
       br/
       |会場: 講義棟 K408
     #slider-area
-      img#vine(src='./img/vine.png', alt='')/
+      img#vine(src='./img/theme/vine.png', alt='')/
       #slider-container
-        img#slider-left-arrow(src='./img/left-arrow.png', alt='')/
+        img#slider-left-arrow(src='./img/theme/left-arrow.png', alt='')/
         #slider
           each page in data
             a(href=`./${page.fileName}`)
               img(src=page.thumbnail, alt=page.title)/
-        img#slider-right-arrow(src='./img/right-arrow.png', alt='')/
+        img#slider-right-arrow(src='./img/theme/right-arrow.png', alt='')/
