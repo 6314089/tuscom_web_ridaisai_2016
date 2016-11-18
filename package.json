@@ -4,12 +4,12 @@
   "description": "TUSCOMの2016年理大祭用ページ作成リポジトリ",
   "scripts": {
     "start": "npm-run-all build server",
-    "server": "node ./server.js",
+    "server": "node ./dev/server.js",
     "build": "npm-run-all -s clean -p build:*",
-    "build:stylus": "stylus -c --include-css -U src/stylus/style.styl -o dist",
-    "build:image": "node ./buildImage.js",
-    "build:webpack": "webpack --progress",
-    "build:pug": "node ./compilePug.js",
+    "build:webpack": "webpack --config ./dev/webpack.config.js",
+    "build:stylus": "node ./dev/buildStylus.js",
+    "build:image": "node ./dev/buildImage.js",
+    "build:pug": "node ./dev/compilePug.js",
     "clean": "rimraf ./dist"
   },
   "repository": {
