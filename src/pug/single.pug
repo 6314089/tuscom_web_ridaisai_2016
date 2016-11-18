@@ -1,0 +1,18 @@
+extends base
+block main
+  #main.barba-container(data-prev=prev, data-next=next)
+    a.single-logo(href ='./top.html')
+      img(src='./img/logo.svg', alt='')/
+    a.main-left-arrow(href=`./${prev}`)
+      img(src='./img/left-arrow.svg', alt='')/
+    .single
+      - const [first, ...rest] = images;
+      img.screenshot(src=first, alt='')/
+      .inner-single
+        h1 #{title}
+        each t in text
+          p #{t}
+        each img in rest
+          img.inner-screenshot(src=img, alt='')/
+    a.main-right-arrow(href=`./${next}`)
+      img(src='./img/right-arrow.svg', alt='')/
