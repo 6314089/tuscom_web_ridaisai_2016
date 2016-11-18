@@ -2,9 +2,9 @@ extends base
 block main
   #main.barba-container(data-prev=prev, data-next=next)
     a.single-logo(href ='./top.html')
-      img(src='./img/logo.svg', alt='')/
+      img(src='./img/logo.png', alt='')/
     a.main-left-arrow(href=`./${prev}`)
-      img(src='./img/left-arrow.svg', alt='')/
+      img(src='./img/left-arrow.png', alt='')/
     .single
       - const [first, ...rest] = images;
       img.screenshot(src=first, alt='')/
@@ -15,4 +15,4 @@ block main
         each img in rest
           img.inner-screenshot(src=img, alt='')/
     a.main-right-arrow(href=`./${next}`)
-      img(src='./img/right-arrow.svg', alt='')/
+      img(src='./img/right-arrow.png', alt='')/
