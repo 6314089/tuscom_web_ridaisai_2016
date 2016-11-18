@@ -7,7 +7,7 @@
     "server": "node ./server.js",
     "build": "npm-run-all -s clean -p copy:* -p build:*",
     "build:stylus": "stylus -c src/stylus/style.styl -o dist",
-    "build:image": "imagemin 'src/img/*.{png,jpg}' --out-dir=dist/img",
+    "build:image": "imagemin \"src/img/*.{png,jpg}\" --out-dir=dist/img",
     "build:svg": "node svgToPng.js",
     "build:webpack": "webpack --progress",
     "build:pug": "node ./compilePug.js",
