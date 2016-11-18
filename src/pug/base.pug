@@ -7,13 +7,16 @@ html(lang='ja')
     link(rel='stylesheet', href='./slick/slick-theme.css')/
     link(rel='stylesheet', href='./style.css')/
     script(src='./bundle.js')
-  body#barba-wrapper
-    div#cover1
-      div#cover2
+  #barba-wrapper
+    #cover1
+      #cover2
         each i in [...Array(12).keys()]
           img.cover-code(src=`./img/theme/code-${i}.png`, alt='')/
         img#now-loading(src='./img/theme/NowLoading.png', alt='')/
         img#loader(src='./img/theme/loader.png', alt='')/
+    #background-code
+      each i in [...Array(12).keys()]
+        img(src=`./img/theme/code-${i}.png`, alt='')/
     block main
     footer
       a(href='http://www.ed.tus.ac.jp/tuscom') TUSCOM
