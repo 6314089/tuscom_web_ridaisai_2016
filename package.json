@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm-run-all build server",
     "server": "node ./server.js",
-    "build": "npm-run-all -s clean -p copy:* -p build:*",
+    "build": "npm-run-all -s clean -p build:*",
     "build:stylus": "stylus -c --include-css -U src/stylus/style.styl -o dist",
     "build:image": "node ./buildImage.js",
     "build:webpack": "webpack --progress",
