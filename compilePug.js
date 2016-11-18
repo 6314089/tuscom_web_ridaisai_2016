@@ -14,7 +14,7 @@ const single = pug.compileFile('./src/pug/single.pug');
 const compileTop = () => {
   const out = path.join(dist, 'top.html');
   const d = {
-    title: '理大祭2016 - TUSCOM',
+    htmlTitle: '理大祭2016 - TUSCOM',
     data,
   };
 
@@ -32,10 +32,10 @@ const compileSingles = () => {
   data.forEach((obj, index, arr) => {
     const out = path.join(dist, obj.fileName);
     const d = Object.assign({
+      htmlTitle: `${obj.title} : 理大祭2016 - TUSCOM`,
       prev: arr[((length + index) - 1) % length].fileName,
       next: arr[((length + index) + 1) % length].fileName,
     }, obj);
-    d.title += ' : 理大祭2016 - TUSCOM';
 
     fs.writeFile(
       out,
