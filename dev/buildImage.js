@@ -6,10 +6,9 @@ const imagemin = require('imagemin');
 const svg2png = require('svg2png');
 
 
-const src = path.join(__dirname, './src/img/');
-const dist = path.join(__dirname, './dist/img/');
-const pattern = ext => `${src}**/*.${ext}`;
-
+const src = path.resolve(__dirname, '../src/img');
+const dist = path.resolve(__dirname, '../dist/img');
+const pattern = ext => `${src}/**/*.${ext}`;
 
 const eachFiles = (pat, func) =>
   glob(pat)
@@ -19,7 +18,7 @@ const eachFiles = (pat, func) =>
   })))
   .then(files => files.map(({ file, temp }) => ({
     file,
-    out: path.join(dist, temp),
+    out: path.resolve(dist, temp),
   })))
   .then(files => files.map(func))
   .then(pendings => Promise.all(pendings));
