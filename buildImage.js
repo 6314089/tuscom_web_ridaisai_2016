@@ -19,10 +19,10 @@ const eachFiles = (pat, func) =>
   })))
   .then(files => files.map(({ file, temp }) => ({
     file,
-    out: path.join(dist, temp)
+    out: path.join(dist, temp),
   })))
   .then(files => files.map(func))
-  .then(pendings => Promise.all(pendings))
+  .then(pendings => Promise.all(pendings));
 
 const other = () => eachFiles(
   pattern('{png,jpg}'),
