@@ -10,7 +10,6 @@
     "build:image": "node ./buildImage.js",
     "build:webpack": "webpack --progress",
     "build:pug": "node ./compilePug.js",
-    "copy:slick-carousel": "cpx \"./node_modules/slick-carousel/slick/*.{css,gif}\" ./dist/slick",
     "clean": "rimraf ./dist"
   },
   "repository": {
