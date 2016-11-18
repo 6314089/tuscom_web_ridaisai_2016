@@ -1,23 +1,20 @@
-const fs = require('fs');
 const path = require('path');
-const glob = require('glob');
+const fsp = require('fs-promise');
+const glob = require('glob-promise');
 const svg2png = require('svg2png');
 
 const pattern = './src/img/*.svg';
-const dist = path.join(__dirname, 'dist/');
+const dist = path.join(__dirname, './dist/img/');
 
-glob(pattern, { nodir: true }, (err, maches) => {
-  if (err) throw err;
-  maches.forEach((file) => {
-    const fileName = file.split('/').pop().replace(/.svg$/, '.png');
-    const output = path.join(dist, fileName);
-
-    fs.readFile(file, 'utf-8', (er, data) => {
-      if (er) throw err;
-      console.log(file);
-      svg2png(data)
-      .then(buffer => fs.writeFile(output, buffer))
-      .catch(e => console.log(e));
-    });
-  });
-});
+glob(pattern, { nodir: true })
+.then(files => Promise.all(
+  files
+  .map(file => [file, file.split('/').pop().replace(/.svg$/, '.png')])
+  .map(([file, fileName]) =>
+    fsp.readFile(file)
+    .then(svg2png)
+    .then(buffer => fsp.writeFile(path.join(dist, fileName), buffer))
+    .then(() => console.log(`svg to png  ${fileName}`))
+    .catch(err => console.error(err)))))
+.then(() => console.log('\ncomplete!'))
+.catch(err => console.error(err));
