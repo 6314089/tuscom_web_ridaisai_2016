@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('fs-promise');
 const path = require('path');
 const pug = require('pug');
 const html = require('html');
@@ -17,14 +17,8 @@ const compileTop = () => {
     htmlTitle: '理大祭2016 - TUSCOM',
     data,
   };
-
-  fs.writeFile(
-    out,
-    html.prettyPrint(top(d), htmlOpts),
-    (err) => {
-      if (err) throw err;
-      console.log('  compiled top.html');
-    });
+  fs.writeFile(out, html.prettyPrint(top(d), htmlOpts))
+  .catch(err => console.error(err));
 };
 
 const compileSingles = () => {
@@ -36,14 +30,8 @@ const compileSingles = () => {
       prev: arr[((length + index) - 1) % length].fileName,
       next: arr[((length + index) + 1) % length].fileName,
     }, obj);
-
-    fs.writeFile(
-      out,
-      html.prettyPrint(single(d), htmlOpts),
-      (err) => {
-        if (err) throw err;
-        console.log(`  compiled ${obj.fileName}`);
-      });
+    fs.writeFile(out, html.prettyPrint(single(d), htmlOpts))
+    .catch(err => console.error(err));
   });
 };
 
