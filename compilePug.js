@@ -11,7 +11,7 @@ const single = pug.compileFile('./src/pug/single.pug');
 
 fs.writeFile(
   path.join(dist, 'top.html'),
-  html.prettyPrint(top({})),
+  html.prettyPrint(top({}), { unformatted: [] }),
   (err) => {
     if (err) throw err;
     console.log('top.html 完了');
@@ -20,7 +20,7 @@ fs.writeFile(
 data.forEach((obj) => {
   fs.writeFile(
     path.join(dist, obj.fileName),
-    html.prettyPrint(single(obj)),
+    html.prettyPrint(single(obj), { unformatted: [] }),
     (err) => {
       if (err) throw err;
       console.log(`${obj.fileName} 完了`);
