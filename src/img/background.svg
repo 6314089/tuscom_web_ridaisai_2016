@@ -13,7 +13,9 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="background.svg">
+   sodipodi:docname="background.svg"
+   width="2294.28"
+   height="1468.5699">
   <metadata
      id="metadata14">
     <rdf:RDF>
@@ -22,6 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -8885,7 +8888,7 @@
       </g>
     </pattern>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter13614">
       <feFlood
@@ -8991,7 +8994,7 @@
        cy="854.41168"
        fx="894.85516"
        fy="854.41168"
-       r="573.57148" />
+       r="573.57147" />
     <mask
        maskUnits="userSpaceOnUse"
        id="mask13800">
@@ -9015,35 +9018,34 @@
      inkscape:window-height="841"
      id="namedview10"
      showgrid="false"
-     inkscape:zoom="0.6428022"
-     inkscape:cx="518.37434"
-     inkscape:cy="411.44012"
+     inkscape:zoom="0.3214011"
+     inkscape:cx="800.2925"
+     inkscape:cy="630.92331"
      inkscape:window-x="54"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2"
      inkscape:snap-center="true" />
   <path
-     fill="#e1e1e6"
-     d="M0 0v734.285h1147.143V0H0z"
-     id="path4" />
+     d="m 0,0 0,734.285 1147.143,0 L 1147.143,0 0,0 Z"
+     id="path4"
+     inkscape:connector-curvature="0"
+     style="fill:#e1e1e6" />
   <path
      inkscape:connector-curvature="0"
-     style="opacity:0.089;fill:url(#pattern13553);fill-opacity:1"
+     style="opacity:0.08900003;fill:url(#pattern13553);fill-opacity:1"
      d="M 0,-2.6855469e-5 0,734.28497 l 1147.143,0 0,-734.284996855469 -1147.143,0 z"
      id="path4-2" />
   <path
-     fill="#c0c090"
-     fill-opacity=".502"
-     fill-rule="evenodd"
-     d="M1147.143 114.578s-368.477 77.065-546.43 137.024C394.32 321.146 0 508.627 0 508.627v225.658h1147.143z"
-     id="path6" />
+     d="m 1147.143,114.578 c 0,0 -368.477,77.065 -546.43,137.024 C 394.32,321.146 0,508.627 0,508.627 l 0,225.658 1147.143,0 z"
+     id="path6"
+     inkscape:connector-curvature="0"
+     style="fill:#c0c090;fill-opacity:0.50199998;fill-rule:evenodd" />
   <path
-     fill="#cfbbbb"
-     fill-rule="evenodd"
-     d="M1147.143 201.078s-584.78 41.018-845.715 160.35C151.138 430.158 0 584.88 0 584.88v149.405h1147.143z"
+     d="m 1147.143,201.078 c 0,0 -584.78,41.018 -845.715,160.35 C 151.138,430.158 0,584.88 0,584.88 l 0,149.405 1147.143,0 z"
      id="path8"
-     style="filter:url(#filter13614)" />
+     style="fill:#cfbbbb;fill-rule:evenodd;filter:url(#filter13614)"
+     inkscape:connector-curvature="0" />
   <path
      inkscape:connector-curvature="0"
      style="opacity:0.178;fill:url(#pattern13576);fill-opacity:1;fill-rule:evenodd"
@@ -9051,7 +9053,7 @@
      id="path8-9" />
   <path
      inkscape:connector-curvature="0"
-     style="opacity:0.409;fill:url(#pattern8628);fill-opacity:1.0"
+     style="opacity:0.40900005;fill:url(#pattern8628);fill-opacity:1"
      d="m 6.5e-6,0 0,734.285 L 1147.143,734.285 1147.143,0 6.5000001e-6,0 Z"
      id="path4-2-5"
      mask="url(#mask13800)" />
