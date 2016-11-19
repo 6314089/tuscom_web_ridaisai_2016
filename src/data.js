@@ -67,4 +67,25 @@ module.exports = [
       '操作方法は十字キーで移動、zキーで攻撃です。クリア後にクリアまでどれだけ時間がかかったかを表示します。',
     ],
   },
+  {
+    fileName: 'torigautsu.html',
+    thumbnail: './img/torigautsu/torigautsu-thumbnail.png',
+    images: [
+      './img/torigautsu/torigautsu-1.png',
+      './img/torigautsu/torigautsu-2.png',
+    ],
+    title: '鳥が撃つ',
+    text: [
+      'キーボード：',
+      '方向キー：カーソル・プレイヤー移動',
+      'Zキー：決定・攻撃停止',
+      'Xキー：キャンセル・ポーズ',
+      'Q、Wキー：武器切り替え',
+      'マウス：',
+      '左クリック：選択肢を選択・プレイヤー移動',
+      '右クリック：キャンセル・ポーズ',
+      'ホイール上下：武器切り替え',
+      '本体：https://1drv.ms/u/s!ApII0f54SxFqhwkpJKl31I3A0V3p',
+    ],
+  },
 ];
