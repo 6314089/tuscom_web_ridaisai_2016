@@ -3,7 +3,7 @@ const prompt = require('prompt-promise');
 const scp = require('scp2');
 const ssh = require('ssh2-client');
 
-const folder = path.resolve(__dirname, '../dist/top.html');
+const folder = path.resolve(__dirname, '../dist/');
 const host = 'tusedt000.ed.tus.ac.jp';
 const username = 'tuscom';
 
@@ -14,38 +14,30 @@ const promptPassword = () => {
   return prompt.password('password: ');
 };
 
-const pass = (() => {
-  let password = '';
-  return {
-    set(newpass) { password = newpass; },
-    get: () => ({ password }),
-  };
-})();
-
-const exec = cmd => (() => {
+const exec = cmd => ((password) => {
   console.log(`command: ${cmd}`);
-  ssh.exec(`${username}@${host}`, cmd, pass.get());
+  ssh.exec(`${username}@${host}`, cmd, { password });
+  return password;
 });
 
 const send = () => (
-  () => new Promise((resolve, reject) => {
-    console.log('start sending files...');
-    scp.scp(path.resolve(__dirname, '../dist/'), {
+  password => new Promise((resolve, reject) => {
+    console.log('scp2: start sending files...');
+    scp.scp(folder, {
       host,
       username,
-      password: pass.get(),
+      password,
       path: 'www/ridaisai2016',
     }, (err) => {
       if (err) reject(err);
-      console.log('finish!');
-      resolve();
+      console.log('scp2: finish!');
+      resolve(password);
     });
   })
 );
 
 const deploy = () => Promise.resolve()
 .then(promptPassword)
-.then(pass.set)
 .then(exec('rm www/ridaisai2016/ -rf'))
 .then(exec('mkdir www/ridaisai2016 -p'))
 .then(send())
