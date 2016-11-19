@@ -105,4 +105,19 @@ module.exports = [
       '左右矢印キーで移動、Zキーで弾を撃つ',
     ],
   },
+  {
+    fileName: 'iraira.html',
+    thumbnail: './img/iraira/iraira-thumbnail.png',
+    images: [
+      './img/iraira/iraira-1.png',
+      './img/iraira/iraira-2.png',
+    ],
+    title: 'iraira',
+    text: [
+      '要するにイライラ棒。',
+      'マウスで操作。',
+      '',
+      'https://drive.google.com/drive/folders/0Bz5LefCdnSThc3d3WHc3Tkx5VnM?usp=sharing',
+    ],
+  },
 ];
