@@ -55,4 +55,16 @@ module.exports = [
       '矢印キーで移動，zキーで攻撃ができます．的に触るとダメージを受けます．',
     ],
   },
+  {
+    fileName: 'udhita.html',
+    thumbnail: './img/udhita/udhita-thumbnail.png',
+    images: [
+      './img/udhita/udhita-1.png',
+    ],
+    title: '対にわとりアクションゲーム',
+    text: [
+      'ただひたすらたくさんのニワトリを倒す無双ゲーです。',
+      '操作方法は十字キーで移動、zキーで攻撃です。クリア後にクリアまでどれだけ時間がかかったかを表示します。',
+    ],
+  },
 ];
