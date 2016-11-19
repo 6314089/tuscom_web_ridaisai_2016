@@ -120,4 +120,25 @@ module.exports = [
       'https://drive.google.com/drive/folders/0Bz5LefCdnSThc3d3WHc3Tkx5VnM?usp=sharing',
     ],
   },
+  {
+    fileName: 'ImgDw.html',
+    thumbnail: './img/ImgDw/ImgDw-thumbnail.png',
+    images: [
+      './img/ImgDw/ImgDw-1.png',
+      './img/ImgDw/ImgDw-2.png',
+    ],
+    title: 'ImgDw',
+    text: [
+      'やりたかったこと',
+      'Bingの画像検索にはセーフサーチがある。',
+      'セーフサーチがかかっているとアレな画像が表示されない。',
+      '一方セーフサーチを切ると普通の画像とアレな画像が両方表示される。',
+      'つまりセーフサーチ切の結果からセーフサーチ入の結果を抜けばアレな画像だけが抽出できるのでは・・・？！。',
+      '',
+      '使い方',
+      '上の長いテキストボックスに検索ワードを入力して実行を押せば画像が保存される。',
+      '検索オプションのセーフサーチで上の話をやる。',
+      'なおバグだらけでうまくいかない模様。',
+    ],
+  },
 ];
