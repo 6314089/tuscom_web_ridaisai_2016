@@ -1,12 +1,13 @@
 const fs = require('fs-promise');
+const mkdirp = require('mkdirp-promise');
 const path = require('path');
 const pug = require('pug');
 const html = require('html');
 
 const htmlOpts = { unformatted: [] };
-const dist = path.join(__dirname, '/dist');
+const dist = path.resolve(__dirname, '../dist/');
 
-const data = require('./src/data');
+const data = require('../src/data');
 
 const top = pug.compileFile('./src/pug/top.pug');
 const single = pug.compileFile('./src/pug/single.pug');
@@ -35,5 +36,6 @@ const compileSingles = () => {
   });
 };
 
-compileTop();
-compileSingles();
+mkdirp(dist)
+.then(Promise.all([compileTop(), compileSingles()]))
+.catch(err => console.log(err));
