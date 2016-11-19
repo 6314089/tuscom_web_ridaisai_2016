@@ -81,11 +81,28 @@ module.exports = [
       'Zキー：決定・攻撃停止',
       'Xキー：キャンセル・ポーズ',
       'Q、Wキー：武器切り替え',
+      '',
       'マウス：',
       '左クリック：選択肢を選択・プレイヤー移動',
       '右クリック：キャンセル・ポーズ',
       'ホイール上下：武器切り替え',
+      '',
       '本体：https://1drv.ms/u/s!ApII0f54SxFqhwkpJKl31I3A0V3p',
+    ],
+  },
+  {
+    fileName: 'welsian.html',
+    thumbnail: './img/welsian/welsian-thumbnail.png',
+    images: [
+      './img/welsian/welsian-1.png',
+      './img/welsian/welsian-2.png',
+    ],
+    title: 'ウエルシアン',
+    text: [
+      '薬をうってうってうちまくれ！',
+      '',
+      '操作方法',
+      '左右矢印キーで移動、Zキーで弾を撃つ',
     ],
   },
 ];
