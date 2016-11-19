@@ -8,7 +8,7 @@ module.exports = [
     ],
     title: 'ポップコーン販売（外ブース）',
     text: [
-      'ポップコーンの説明ポップコーンの説明ポップコーンの説明ポップコーンの説明ポップコーンの説明ポップコーンの説明ポップコーンの説明ポップコーンの説明ポップコーンの説明ポップコーンの説明ポップコーンの説明ポップコーンの説明ポップコーンの説明',
+      '塩味とキャラメル味の二種類を販売しています．',
     ],
   },
   {
@@ -25,48 +25,21 @@ module.exports = [
       'ターン制のシミュレーションゲームです． 比較的難易度は高めになっています．',
       '情報科学科二年の情報科学演習で作成しました．Javaで実装されています．',
       'システム制作で力尽きたため，ステージ自体はシンプルでバランス調整もままならない状況になっています．一応クリアは可能です．',
+      '操作方法は画面の下の方に全て書かれています',
     ],
   },
   {
-    fileName: 'dummy1.html',
-    thumbnail: './img/dummy1/dummy1-thumbnail.png',
+    fileName: 'mioroshi.html',
+    thumbnail: './img/mioroshi/mioroshi-thumbnail.png',
     images: [
-      './img/dummy1/dummy1-1.png',
-      './img/dummy1/dummy1-2.png',
+      './img/mioroshi/mioroshi-1.png',
+      './img/mioroshi/mioroshi-2.png',
     ],
-    title: 'dummy1',
+    title: '見下ろし型アクションゲーム',
     text: [
-      'dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1',
-      'dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 ',
-      'dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1 dummy1',
-    ],
-  },
-  {
-    fileName: 'dummy2.html',
-    thumbnail: './img/dummy2/dummy2-thumbnail.png',
-    images: [
-      './img/dummy2/dummy2-1.png',
-      './img/dummy2/dummy2-2.png',
-    ],
-    title: 'dummy2',
-    text: [
-      'dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2',
-      'dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 ',
-      'dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2 dummy2',
-    ],
-  },
-  {
-    fileName: 'dummy3.html',
-    thumbnail: './img/dummy3/dummy3-thumbnail.png',
-    images: [
-      './img/dummy3/dummy3-1.png',
-      './img/dummy3/dummy3-2.png',
-    ],
-    title: 'dummy3',
-    text: [
-      'dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3',
-      'dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 ',
-      'dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3 dummy3',
+      '見下ろし型アクションゲームです．',
+      '敵をすべて倒せばクリアとなります．',
+      '矢印キーで移動，zキーで攻撃ができます．的に触るとダメージを受けます．',
     ],
   },
 ];
