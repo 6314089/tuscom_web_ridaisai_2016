@@ -12,6 +12,19 @@ module.exports = [
     ],
   },
   {
+    fileName: 'web.html',
+    thumbnail: './img/web/web-thumbnail.png',
+    images: [
+      './img/web/web-1.png',
+      './img/web/web-2.png',
+      './img/web/web-3.png',
+    ],
+    title: '理大祭特設サイト',
+    text: [
+      '理大祭の特設サイトもイチから作っています．',
+    ],
+  },
+  {
     fileName: 'SLG.html',
     thumbnail: './img/SLG/SLG-thumbnail.png',
     images: [
@@ -25,7 +38,7 @@ module.exports = [
       'ターン制のシミュレーションゲームです． 比較的難易度は高めになっています．',
       '情報科学科二年の情報科学演習で作成しました．Javaで実装されています．',
       'システム制作で力尽きたため，ステージ自体はシンプルでバランス調整もままならない状況になっています．一応クリアは可能です．',
-      '操作方法は画面の下の方に全て書かれています',
+      '操作方法は画面の下の方に全て書かれています．',
     ],
   },
   {
