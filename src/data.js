@@ -79,8 +79,10 @@ module.exports = [
       './img/torigautsu/torigautsu-1.png',
       './img/torigautsu/torigautsu-2.png',
     ],
-    title: '鳥が撃つ',
+    title: 'チキンシューティング',
     text: [
+      '鳥が撃つ',
+      '',
       'キーボード：',
       '方向キー：カーソル・プレイヤー移動',
       'Zキー：決定・攻撃停止',
