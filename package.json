@@ -69,5 +69,16 @@
         }
       ]
     }
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "browsers": ["last 2 versions"],
+          "modules": false
+        }
+      ]
+    ]
   }
 }
