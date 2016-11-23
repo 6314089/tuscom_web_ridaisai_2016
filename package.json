@@ -47,5 +47,27 @@
     "stylus": "^0.54.5",
     "svg2png": "^4.1.0",
     "webpack": "2.1.0-beta.27"
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "env": {
+      "browser": true,
+      "es6": true,
+      "jquery": true
+    },
+    "rules": {
+      "linebreak-style": "off",
+      "no-console": "off",
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "ignore"
+        }
+      ]
+    }
   }
 }
